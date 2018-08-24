@@ -1,0 +1,8 @@
+<h1><%= @car[:title] %></h1>
+<p><%= @car[:car_body] %></p>
+<img src="<%= @car[:car_body] %>">
+<form action="/cars/<%= @car[:id] %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>
+<a href="/cars/<%= @car[:id] %>/edit">Edit</a>
