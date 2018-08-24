@@ -1,0 +1,8 @@
+<h1>welcome to my homepage</h1>
+<% @cars.each do |car| %>
+  <div>
+    <h3><a href="/cars/<%= car[:id] %>"><%= car[:title] %></a></h3>
+    <p><%= car[:car_body] %></p>
+    <img src="<%= car[:image] %>" >
+  </div>
+<% end %>
